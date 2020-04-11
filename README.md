@@ -4,7 +4,7 @@ Live COVID-19 Tracker is a simple web app that shows the latest COVID-19 statist
 
 ## Website
 
-Navigate to [mytechnotalent.com/lct.html](http://mytechnotalent.com/lctus.html).
+Navigate to [mytechnotalent.com/lctus.html](http://mytechnotalent.com/lctus.html).
 
 ## Contributing
 
