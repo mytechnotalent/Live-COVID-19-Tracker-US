@@ -1,0 +1,72 @@
+<!--
+// Live COVID-19 Tracker US
+// ************************
+// 
+// Created by Kevin Thomas 04/11/20.
+// Modified by Kevin Thomas 04/11/20.
+// Apache License, Version 2.0
+// 
+// Live COVID-19 Tracker is a simple web app that shows the latest COVID-19 
+// statistics feed of individual US States of choice in real-time which
+// refreshes every 60 seconds.
+-->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>LCT US</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <a class="navbar-brand" href="#">Live COVID-19 Tracker US</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Enter State" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    
+    <div class="jumbotron bg-transparent">
+      <h4 class="display-5">US</h4>
+      <p id="us_cases"></p>
+      <p id="us_today_cases"></p>
+      <p id="us_deaths"></p>
+      <p id="us_today_deaths"></p>
+      <p id="us_recovered"></p>
+      <p id="us_active"></p>
+      <p id="us_critical"></p>
+      <p id="us_cases_per_one_million"></p>
+      <p id="us_deaths_per_one_million"></p>
+      <p id="us_tests"></p>
+      <p id="us_tests_per_one_million"></p>
+      <br>
+      <h4 class="display-5" id="text-output"></h4>
+      <p id="state_cases"></p>
+      <p id="state_today_cases"></p>
+      <p id="state_deaths"></p>
+      <p id="state_today_deaths"></p>
+      <p id="state_active"></p>
+      <p id="state_tests"></p>
+      <p id="state_tests_per_one_million"></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="lctus_script.js"></script>
+  </body>
+</html>
