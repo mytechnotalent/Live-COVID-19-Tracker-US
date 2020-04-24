@@ -29,7 +29,7 @@ function init_state_data() {
         input = $input.val();
         $('#text-output').text(input);
 
-        $.get('https://corona.lmao.ninja/states/' + input, function(data) {
+        $.get('https://corona.lmao.ninja/v2/states/' + input, function(data) {
             // console.log(data);
 
             if (input == '') {
@@ -66,7 +66,7 @@ function init_state_data() {
 
 // Obtain state data from API
 function state_data() {
-    $.get('https://corona.lmao.ninja/states/' + input, function(data) {
+    $.get('https://corona.lmao.ninja/v2/states/' + input, function(data) {
         // console.log(data);
 
         $("#state_cases").text(data.cases + ' Cases');
@@ -81,7 +81,7 @@ function state_data() {
 
 // Obtain US data from API
 function us_data() {
-    $.get('https://corona.lmao.ninja/countries/usa', function(data) {
+    $.get('https://corona.lmao.ninja/v2/countries/usa', function(data) {
         // console.log(data);
 
         $("#us_cases").text(data.cases + ' Cases');
