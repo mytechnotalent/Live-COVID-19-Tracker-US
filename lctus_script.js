@@ -3,6 +3,7 @@
 // 
 // Created by Kevin Thomas 04/11/20.
 // Modified by Kevin Thomas 04/11/20.
+//
 // Apache License, Version 2.0
 // 
 // Live COVID-19 Tracker is a simple web app that shows the latest COVID-19 
