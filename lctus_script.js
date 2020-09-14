@@ -1,3 +1,4 @@
+//
 // Live COVID-19 Tracker US
 // ************************
 //    
@@ -12,6 +13,7 @@
 // refreshes every 60 seconds.
 //
 // Version 0.0.1 Alpha
+//
 
 
 // Global vars
